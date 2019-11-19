@@ -35,7 +35,49 @@
             </ul>
         </div>
     </nav>
-    pedra
+    <div class="container my-2">
+        <h1 class="my-4">Nos diga o que acha</h1>
+        <form class="needs-validation" novalidate>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Nome" required>
+                        <div class="valid-feedback">Muito bem!</div>
+                        <div class="invalid-feedback">Insira seu nome.</div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="E-mail" required>
+                        <div class="valid-feedback">Muito bem!</div>
+                        <div class="invalid-feedback">Insira seu E-mail.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="Cidade">Cidade</label>
+                        <input type="text" class="form-control" id="Cidade" placeholder="Cidade" required>
+                        <div class="valid-feedback">Muito bem!</div>
+                        <div class="invalid-feedback">Insira sua Cidade.</div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" class="form-control" id="telefone" placeholder="Telefone" required>
+                        <div class="valid-feedback">Muito bem!</div>
+                        <div class="invalid-feedback">Insira seu telefone.</div>
+                    </div>
+                </div>
+                <label for="msg">Insira sua mensagem</label>
+                <textarea id="msg" rows="4" class="form-control" placeholder="Insira sua Mensagem" required></textarea>
+                <div class="valid-feedback">Muito bem!</div>
+                <div class="invalid-feedback">Por favor preencha esse campo.</div>
+            </div>
+            <button class="btn btn-outline-success" type="submit">Enviar Mensagem</button>
+        </form>
+    </div>
 
     <footer class="mt-auto py-3 bg-dark footer">
         <div class="container text-center">
@@ -44,6 +86,7 @@
     </footer>
 
     <!-- Optional JavaScript -->
+    <script src="js/validation.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
